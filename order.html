@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ordering Form</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn">Menu</button>
+        <div class="dropdown-content">
+            <a href="index.html">Home Page</a>
+            <a href="order.html">Ordering Page</a>
+        </div>
+      </div>
+   
+<header>
+    <img src="logo1.png" alt="Company Logo" height="350" width="400">
+    <h1>VIRUS PIZZA</h1>
+    <h2>Order At Your Own RISK</h2>
+    <h2>Fill in the details below</h2>
+</header>
+<form id="orderForm">
+    <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" >
+    </div>
+    <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" >
+    </div>
+    <div class="form-group">
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" >
+    </div>
+   
+    <div id="dropdown">
+        <button class="dropdown-toggle" type="button">
+            <span>Type Of Cuisine</span>
+            <i class="fa-solid fa-caret-down"></i>
+        </button>
+        <ul class="menu">
+            <li class="menu-item"><a href="#">Italian</a></li>
+            <li class="menu-item"><a href="#">Chinese</a></li>
+            <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                    <span>Healthy Options</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#">Vegetarian</a></li>
+                    <li class="submenu-item"><a href="#">Vegan</a></li>
+                    <li class="submenu-item"><a href="#">Gluten-Free</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="#">Mexican</a></li>
+            <li class="menu-item dropdown">
+                <a href="#" class="submenu-toggle">
+                    <span>Specials</span>
+                    <i class="fa-solid fa-caret-right"></i>
+                </a>
+                <ul class="submenu">
+                    <li class="submenu-item"><a href="#">Cannabis Infused</a></li>
+                    <li class="submenu-item"><a href="#">Exotic Meats</a></li>
+                    <li class="submenu-item"><a href="#">Human</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+        <script src='script.js'></script>
+        <br>
+    <div class="form-group">
+        <label for="payment">Mode of Payment:</label>
+        <input type="radio" id="cash" name="payment" value="cash" >
+        <label for="cash">Cash</label>
+        <input type="radio" id="card" name="payment" value="card" >
+        <label for="card">Card</label>
+    </div>
+    <div class="form-group">
+        <label for="orderType">Dine-in or Take-out:</label>
+        <input type="radio" id="dineIn" name="orderType" value="dineIn">
+        <label for="dineIn">Dine-in</label>
+        <input type="radio" id="takeOut" name="orderType" value="takeOut" >
+        <label for="takeOut">Take-out</label>
+    </div>
+    <div class="form-group">
+        <label for="comments">Comments or Instructions:</label>
+        <textarea id="comments" name="comments"></textarea>
+    </div>
+    <button type="submit"><a href="extra.html">Place Order</a></button>
+    <button type="reset">Cancel</button>
+</form>
+</body>
+</html>
