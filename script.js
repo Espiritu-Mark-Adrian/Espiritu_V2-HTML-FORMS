@@ -7,7 +7,7 @@ dropdownToggle.classList.toggle("open");
 document.addEventListener('DOMContentLoaded', function () {
     const dropdownToggle = document.querySelector('.dropdown-toggle');
     dropdownToggle.addEventListener('click', function (event) {
-        event.preventDefault(); // Prevent default button click behavior
+        event.preventDefault();
         const menu = this.nextElementSibling;
         menu.classList.toggle('show');
     });
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const submenuToggles = document.querySelectorAll('.submenu-toggle');
     submenuToggles.forEach(function (toggle) {
         toggle.addEventListener('click', function (event) {
-            event.preventDefault(); // Prevent default link click behavior
+            event.preventDefault();
             const submenu = this.nextElementSibling;
             submenu.classList.toggle('show');
         });
